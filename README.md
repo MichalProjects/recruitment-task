@@ -14,7 +14,7 @@ Udało się zrobić wszystkie cele główne oraz zadania dodatkowe.
 
 Wersja live projektu została umieszczona na platformie Netlify, link poniżej:
 
-**[Wersja live]()**
+**[Wersja live](https://669195a62ae3bd477d3aa1ca--recruitmenttask12.netlify.app/)**
 
 ## Uruchomienie
 
