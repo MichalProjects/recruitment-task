@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+html {
+  font-size: 37.5%; // set REM unit to 6px by default (for smallest screens - mobile first)
+
+  @include respond(small) {
+    font-size: 43.75%; // 7px
+  }
+  @include respond(medium) {
+    font-size: 50%;
+    // 8px
+  }
+  @include respond(large) {
+    font-size: 56.25%; // 9px
+  }
+  @include respond(x-large) {
+    font-size: 62.5%; // 10px
+  }
+  @include respond(xx-large) {
+    font-size: 75%; // 12px
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $neutral--dark3;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.35;
+  color: $neutral--light1;
+}
+
+::selection {
+  background-color: $primary;
+  color: $neutral--light1;
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+
+  &:visited {
+    color: inherit;
+  }
+}

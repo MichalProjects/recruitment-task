@@ -1,0 +1,11 @@
+@import "../../../../styles.scss";
+
+:host {
+  grid-area: blok-1;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}

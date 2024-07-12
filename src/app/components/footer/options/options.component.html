@@ -1,0 +1,34 @@
+<button class="options">
+  <input
+    class="options__checkbox"
+    type="checkbox"
+    id="options_toggle"
+    name="options_toggle"
+  />
+  <label class="button options__button" for="options_toggle">
+    Pokaż
+    <div class="options__icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="currentColor"
+          d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6l-6 6z"
+        />
+      </svg>
+    </div>
+  </label>
+  <ul class="options__menu menu">
+    <app-option
+      label="Zresetuj ustawienia"
+      [onButtonClick]="clearData"
+    ></app-option>
+    <app-option
+      label="Pokaż dane osobowe"
+      [onButtonClick]="toggleName"
+    ></app-option>
+  </ul>
+</button>

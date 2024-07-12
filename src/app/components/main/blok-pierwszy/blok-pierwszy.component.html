@@ -1,0 +1,23 @@
+<section class="column column--1">
+  <h2 class="column__title">Blok Pierwszy</h2>
+  <fieldset class="options">
+    <app-radio-option
+      name="first"
+      label="Opcja pierwsza"
+      (optionSelected)="onSelectedOptionChange($event)"
+      [selectedOption]="selectedOption"
+    ></app-radio-option>
+    <app-radio-option
+      name="second"
+      label="Opcja druga"
+      (optionSelected)="onSelectedOptionChange($event)"
+      [selectedOption]="selectedOption"
+    ></app-radio-option>
+    <app-radio-option
+      name="random"
+      label="Opcja losowa"
+      (optionSelected)="onSelectedOptionChange($event)"
+      [selectedOption]="selectedOption"
+    ></app-radio-option>
+  </fieldset>
+</section>

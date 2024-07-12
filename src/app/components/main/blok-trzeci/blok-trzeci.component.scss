@@ -1,0 +1,17 @@
+@import "../../../../styles.scss";
+
+:host {
+  grid-area: blok-3;
+}
+
+.title--long {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.output {
+  text-align: center;
+  color: $neutral--light2;
+  font-weight: 300;
+}

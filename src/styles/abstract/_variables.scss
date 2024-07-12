@@ -1,0 +1,20 @@
+// Color palette
+$neutral--dark1: #0b0c10;
+$neutral--dark2: #15161a;
+$neutral--dark3: #2a2d36;
+$neutral--light1: #ffffff;
+$neutral--light2: #a1a7b5;
+$primary: #ec8a09;
+$primary--darker: #d47602;
+$primary--lighter: #fca22d;
+
+:export {
+  neutral--dark1: $neutral--dark1;
+  neutral--dark2: $neutral--dark2;
+  neutral--dark3: $neutral--dark3;
+  neutral--light1: $neutral--light1;
+  neutral--light2: $neutral--light2;
+  primary: $primary;
+  primary--darker: $primary--darker;
+  primary--lighter: $primary--lighter;
+}

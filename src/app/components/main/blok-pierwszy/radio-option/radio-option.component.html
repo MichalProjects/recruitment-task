@@ -1,0 +1,12 @@
+<label class="option">
+  <input
+    class="option__radio"
+    type="radio"
+    name="{{ name }}"
+    value="{{ name }}"
+    (change)="onRadioChange()"
+    [checked]="name === selectedOption"
+  />
+  <div class="option__checkmark"></div>
+  <span class="option__label">{{ label }}</span>
+</label>

@@ -1,0 +1,23 @@
+.column {
+  padding: 4rem 0;
+  &--1 {
+    grid-area: blok-1;
+  }
+  &--2 {
+    grid-area: blok-2;
+  }
+  &--3 {
+    grid-area: blok-3;
+  }
+  &__title {
+    font-size: 1.6rem;
+    line-height: 1;
+    padding-bottom: 4.5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include respond(medium) {
+      padding-bottom: 7rem;
+    }
+  }
+}

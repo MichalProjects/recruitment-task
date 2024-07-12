@@ -1,0 +1,56 @@
+@import "../../../../styles.scss";
+
+:host {
+  flex: 0 0 24rem;
+}
+
+.options {
+  position: relative;
+  width: 100%;
+
+  &__menu {
+    position: absolute;
+    bottom: calc(100% + 4.7rem);
+    width: 100%;
+    max-height: 0px;
+    padding: 0 2rem;
+    background-color: $neutral--light1;
+    overflow: hidden;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 2rem #000;
+  }
+
+  &__button {
+    width: 100%;
+    border-color: $neutral--dark3;
+    &:hover {
+      border-color: $neutral--light1;
+    }
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: all 0.3s ease-in-out;
+    & svg {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+  &__checkbox {
+    display: none;
+    &:checked ~ .options__button .options__icon {
+      transform: rotate(180deg);
+    }
+    &:checked ~ .options__menu {
+      padding: 2rem;
+      height: auto;
+      max-height: 15rem;
+    }
+    &:checked ~ .options__button {
+      color: $neutral--light1;
+      border-color: $neutral--light1;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  color: $neutral--light2;
+  border-radius: 0.4rem;
+  border: 1px solid $neutral--light1;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: transparent;
+  background-position: 50% 100%;
+  cursor: pointer;
+
+  &:hover {
+    color: $neutral--light1;
+    background: linear-gradient(135deg, $primary--darker, $primary--lighter);
+  }
+}

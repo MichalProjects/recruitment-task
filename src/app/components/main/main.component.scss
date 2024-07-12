@@ -1,0 +1,49 @@
+@import "../../../styles.scss";
+
+:host {
+  flex: 1 1 auto;
+  overflow-x: auto;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  gap: 6rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: 10rem 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "blok-1 blok-2"
+    "blok-3 blok-3";
+  padding: 6rem;
+
+  @include respond(medium) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 10rem 1fr;
+    grid-template-areas:
+      "title title title"
+      "blok-1 blok-2 blok-3";
+  }
+
+  &__title {
+    position: relative;
+    grid-area: title;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 400;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      left: 50%;
+      bottom: 1rem;
+      transform: translateX(-50%);
+      width: 23rem;
+      border-bottom: 1px;
+      border-bottom: 1px solid $neutral--light1;
+    }
+  }
+}

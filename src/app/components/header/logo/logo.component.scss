@@ -1,0 +1,25 @@
+@import "../../../../styles.scss";
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+
+  border-radius: 5rem;
+  background-color: #303030;
+  transition: background-color 0.15s ease-in-out;
+
+  &:hover {
+    background-color: $primary;
+  }
+  & a {
+    width: 7rem;
+    height: 7rem;
+  }
+  & svg {
+    width: 7rem;
+    height: 7rem;
+  }
+}

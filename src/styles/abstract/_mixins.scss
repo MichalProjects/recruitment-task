@@ -1,0 +1,32 @@
+@mixin respond($breakpoint) {
+  // Medium breakpoint for screens wider than 480px (with default browser settings)
+  @if $breakpoint == small {
+    @media only screen and (min-width: 30em) {
+      @content;
+    }
+  }
+  // Medium breakpoint for screens wider than 960px (with default browser settings)
+  @if $breakpoint == medium {
+    @media only screen and (min-width: 60em) {
+      @content;
+    }
+  }
+  // Medium breakpoint for screens wider than 1440px (with default browser settings)
+  @if $breakpoint == large {
+    @media only screen and (min-width: 90em) {
+      @content;
+    }
+  }
+  // Medium breakpoint for screens wider than 1920px (with default browser settings)
+  @if $breakpoint == x-large {
+    @media only screen and (min-width: 120em) {
+      @content;
+    }
+  }
+  // Medium breakpoint for screens wider than 2400px (with default browser settings)
+  @if $breakpoint == xx-large {
+    @media only screen and (min-width: 150em) {
+      @content;
+    }
+  }
+}

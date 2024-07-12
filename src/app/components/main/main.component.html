@@ -1,0 +1,9 @@
+<main class="main">
+  <h1 class="main__title">Nagłówek H1</h1>
+  <app-blok-pierwszy
+    [selectedOption]="selectedOption"
+    (optionChange)="onSelectedOptionChange($event)"
+  ></app-blok-pierwszy>
+  <app-blok-drugi (buttonClick)="onButtonClick($event)"></app-blok-drugi>
+  <app-blok-trzeci></app-blok-trzeci>
+</main>
