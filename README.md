@@ -22,7 +22,7 @@ Projekt wykorzystuje [Node](https://nodejs.org/en/) i [NPM](https://www.npmjs.co
 
 1.Skopiuj repozytorium:
 
-git clone
+git clone https://github.com/MichalProjects/recruitment-task.git
 
 2.Zainstaluj zależności:
 
